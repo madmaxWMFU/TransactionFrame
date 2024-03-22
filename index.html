@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/fontawesome/font-awesome.min.css">
+    <link rel="stylesheet" href="./css/slick/slick.css">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="payment-wrap">
+            <div class="payment-info">
+                <h3 class="payment-title">Choose your payment method</h3>
+                <div class="payment-system">
+                    <div class="system-item system-item__selected">
+                        <img src="./img/Linear/Card.svg" alt="Card">
+                        <p>Card</p>
+                    </div>
+                    <div class="system-item">
+                        <img src="./img/Linear/bank.svg" alt="Bank">
+                        <p>Bank</p>
+                    </div>
+                    <div class="system-item">
+                        <img src="./img/Linear/Skrill.svg" alt="Skrill">
+                        <p>Skrill</p>
+                    </div>
+                    <div class="system-item">
+                        <img src="./img/Linear/Klarna.svg" alt="Klarna">
+                        <p>Klarna</p>
+                    </div>
+                    <div class="system-item">
+                        <img src="./img/Linear/WeChat.svg" alt="WeChat">
+                        <p>WeChat</p>
+                    </div>
+                    <div class="system-item">
+                        <img src="./img/Linear/add_other.svg" alt="Other">
+                        <p>Other</p>
+                    </div>
+                </div>
+                <form>
+                    <div class="card-wrap">
+                        <div class="card-title">
+                            <h4 class="card-text">Card Details</h4>
+                            <div class="card-type">
+                                <img src="./img/Payment Method/Mastercard.svg" alt="card-type">
+                                <img src="./img/Payment Method/Visa.svg" alt="card-type">
+                                <img src="./img/Payment Method/UnionPay.svg" alt="card-type">
+                                <img src="./img/Payment Method/JCB.svg" alt="card-type">
+                                <img src="./img/Payment Method/Amex.svg" alt="card-type">
+                            </div>
+                        </div>
+                        <div class="card-info">
+                            <div class="card-number">
+                                <input class="card-input" type="text" name="form-card-number"  minlength="16" maxlength="16" placeholder="Card Number" required>
+                                <span class="card-img"></span>
+                            </div>
+                            <div class="card-info_inner">
+                                <input class="card-input card-info_innerItem" type="text" name="form-date" placeholder="MM / YYYY">
+                                <div class="card-cvc card-info_innerItem">
+                                    <input class="card-input" type="password" name="form-cvc" minlength="3" maxlength="3" pattern="\d{3}" placeholder="CVC" required>
+                                    <span class="card-cvc-img"></span>
+                                </div>
+                            </div>
+                            <input class="card-input" type="text" name="form-name" placeholder="Cardholder Name" required>
+                        </div>
+                    </div>
+                    <div class="delivery-wrap">
+                        <input class="delivery-input" type="text" name="form-address" placeholder="Address">
+                        <input class="delivery-input" type="text" name="form-city" placeholder="City">
+                        <input class="delivery-input" type="text" name="form-country" placeholder="Country">
+                        <div class="delivery-wrap_inner">
+                            <input class="delivery-input" type="text" name="form-state" placeholder="State">
+                            <input class="delivery-input" type="text" name="form-post-code" placeholder="Post Code">
+                        </div>
+                        <input class="delivery-input" type="text" name="form-phone-number" placeholder="Phone number">
+                    </div>
+                </form>
+            </div>
+            <div class="payment-summary">
+                <p class="summary-title tb">Summary:</p>
+                <div class="summary-wrap">
+                    <div class="info-wrap amount-info">
+                        <span>Amount:</span>
+                        <span>$ 1500</span>
+                    </div>
+                    <div class="info-wrap shipping-info">
+                        <span>Shipping:</span>
+                        <span>$ 50</span>
+                    </div>
+                    <div class="info-wrap tax-info">
+                        <span>Tax:</span>
+                        <span>$ 10</span>
+                    </div>
+                </div>
+                <div class="divider"></div>
+                <div class="info-wrap total-info">
+                    <span class="tb">Total:</span>
+                    <span class="tb">$ 1560</span>
+                </div>
+                <div class="payment-selection">
+                    <button class="payment-btn ">PAY</button>
+                    <div class="paymet-service">
+                        <button class="payment-btn apple-pay"></button>
+                        <button class="payment-btn g-pay"></button>
+                    </div>
+                </div>
+                <p class="condition-text">By submiting your payment, you agree to the <a class="condition-link">Terms and Conditions</a> and <a class="condition-link">Privacy Policy</a></p>
+                <div class="verified-service">
+                    <img src="./img/verified-by-visa 1.svg" alt="verified-service">
+                    <img src="./img/mastercardsecurecode_logo 1.svg" alt="verified-service">
+                    <img src="./img/1636161799_48-papik-pro-p-visa-logotip-foto-52 1.svg" alt="verified-service">
+                    <img src="./img/pci-compliant 1.svg" alt="verified-service">
+                </div>
+            </div>
+            
+
+        </div>
+    </div>
+    <script src="./js/jquery.min.js"></script>
+    <script src="./js/slick.min.js"></script>
+    <script src="./js/app.js"></script>
+</body>
+</html>
